@@ -32,46 +32,6 @@ Ollama
   ↓
 Research Response
 The agent can also use multiple tools within the same request, allowing it to perform multi-tool orchestration.
-🧠 Architecture
-                    ┌──────────────────┐
-                    │      User        │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │   KOT Research   │
-                    │      Agent       │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │      Ollama      │
-                    │       LLM        │
-                    └────────┬─────────┘
-                             │
-                   Tool Selection
-                             │
-              ┌──────────────┴──────────────┐
-              ▼                             ▼
-      ┌───────────────┐             ┌────────────────┐
-      │   Calculator  │             │ Firecrawl MCP  │
-      │      Tool     │             │     Server     │
-      └───────┬───────┘             └────────┬───────┘
-              │                              │
-              ▼                              ▼
-          Calculation                   Web Research
-              │                              │
-              └──────────────┬───────────────┘
-                             ▼
-                    ┌──────────────────┐
-                    │  Tool Results    │
-                    └────────┬─────────┘
-                             │
-                             ▼
-                    ┌──────────────────┐
-                    │      Ollama      │
-                    │ Final Response   │
-                    └──────────────────┘
 🛠️ Technologies
 Node.js
 TypeScript
