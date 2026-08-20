@@ -5,32 +5,6 @@ KOT Research demonstrates how an LLM can move beyond generating text and dynamic
 Instead of hard-coding which tool should be used for each request, the agent provides the available tools to Ollama and allows the model to determine when a tool is required.
 For example:
 User: Calculate 125 * 37
-
-Ollama
-  ↓
-Selects calculate
-  ↓
-MCP Tool Call
-  ↓
-Result: 4625
-  ↓
-Ollama
-  ↓
-Final Response
-For a research request:
-User: Find the latest Model Context Protocol specification
-
-Ollama
-  ↓
-Selects firecrawl_search
-  ↓
-Firecrawl MCP Server
-  ↓
-Web Results
-  ↓
-Ollama
-  ↓
-Research Response
 The agent can also use multiple tools within the same request, allowing it to perform multi-tool orchestration.
 🛠️ Technologies
 Node.js
